@@ -76,7 +76,7 @@
                 </div>
             @endif
 
-            <div class="content">
+<!--            <div class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
@@ -89,7 +89,20 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+            </div>-->
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
+
+                <div class="links">
+                    @foreach ($links as $link)
+                        <a href="{{ $link->url }}">{{ $link->title }}</a>
+                    @endforeach
+                </div>
             </div>
+            
+            
         </div>
     </body>
 </html>
